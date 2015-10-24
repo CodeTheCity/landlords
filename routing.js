@@ -7,7 +7,7 @@ function Routes(){
         $( "div#jumbo"  ).empty()
         var total = ""
         var div_end = "</div>";
-        $.getJSON("http://ptravers.github.io/landlordslovecreatives/casestudies.json", function(data){
+        $.getJSON("ptravers.github.io/landlordslovecreatives/casestudies.json", function(data){
             console.log("getJSON running")
             $.each(data, function(i, item){
                 total = total + "<div class='col-lg-4' id=" + item.id + ">";
