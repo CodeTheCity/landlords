@@ -27,7 +27,7 @@
 <p id="test"></p>
 
 <script>
-  $.getJSON( "casestudies.json", function( data ) {
+/*  $.getJSON( "casestudies.json", function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
@@ -38,8 +38,14 @@
     html: items.join( "" )
   }).appendTo( "body" );
 });
-  document.getElementById("test").innerHTML = items;
+  document.getElementById("test").innerHTML = $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  });
+*/
 //  document.getElementById("tumpOne").src=""
+$.getJSON("casestudies.json", function() {
+});
 </script>
 
 <p>Welcome to Landlords love creatives</p>
