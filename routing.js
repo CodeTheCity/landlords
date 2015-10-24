@@ -28,4 +28,5 @@ function Routes(){
 
 $(document).ready(function(){
     routes = new Routes();
+    $("div#jumbo").load("/landlordslovecreatives/home.html")
 });
