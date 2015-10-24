@@ -38,7 +38,7 @@
     html: items.join( "" )
   }).appendTo( "body" );
 });
-  document.getElementById("test").innerHTML = items
+  document.getElementById("test").innerHTML = items;
 //  document.getElementById("tumpOne").src=""
 </script>
 
