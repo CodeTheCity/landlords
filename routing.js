@@ -8,6 +8,7 @@ function Routes(){
         var total = ""
         var div_end = "</div>";
         $.getJSON("http://ptravers.github.io/landlordslovecreatives/casestudies.json", function(data){
+            console.log("getJSON running")
             $.each(data, function(i, item){
                 total = total + "<div class='col-lg-4' id=" + item.id + ">";
                 total = total + "<h6>" + item.title + "</h6>";
@@ -23,6 +24,7 @@ function Routes(){
                     total = total + "<p>   " + benefits[i] + "</p>"
                 }
                 total = total + div_end;
+                console.log("Generate html = \n" + total);
             });
         });
         $( "div#jumbo"  ).append(total);
