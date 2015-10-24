@@ -1,6 +1,6 @@
 function Routes(){
     $("#home").click(function(){
-        var name = "";
+        var name = "home.html";
         addNewPage(name);
     });
     $("#case_studies").click(function(){
@@ -16,18 +16,13 @@ function Routes(){
         addNewPage(name);
     });
     $("#home").click(function(){
-        var name = "faq.html";
+        var name = "FAQs.html";
         addNewPage(name);
     });
     function addNewPage(name){
         $( "div#jumbo"  ).empty();
         var url = "/landlordslovecreatives/"
-        if(Boolean(name)){
-            $( "div#jumbo"  ).load(url.concat(name));
-        }
-        else {
-            $( "div#jumbo"  ).load(url);
-        }
+        $( "div#jumbo"  ).load(url.concat(name));
     }
 }
 
