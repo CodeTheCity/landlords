@@ -1,2 +1,25 @@
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://photos1.blogger.com/blogger/7252/784/1600/lamport%20court.0.jpg" alt="Apartment Manchester">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://media.meanwhilespace.com/media/images/Luton_-_Project_jpg_1280x800_crop_q85.jpg" alt="Meanwhilespace">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://photos1.blogger.com/blogger/7252/784/1600/lamport%20court.0.jpg" alt="Apartment Manchester">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://photos1.blogger.com/blogger/7252/784/1600/lamport%20court.0.jpg" alt="Apartment Manchester">
+    </a>
+  </div>
+</div>
+
 <p>Welcome to Landlords love creatives</p>
 <p>Stuff will go here </p>
