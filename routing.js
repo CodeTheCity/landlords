@@ -15,7 +15,7 @@ function Routes(){
         var name = "guide.html";
         addNewPage(name);
     });
-    $("#home").click(function(){
+    $("#faq").click(function(){
         var name = "FAQs.html";
         addNewPage(name);
     });
