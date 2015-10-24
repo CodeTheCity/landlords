@@ -38,7 +38,10 @@
     html: items.join( "" )
   }).appendTo( "body" );
 });
-  document.getElementById("test").innerHTML = items;
+  document.getElementById("test").innerHTML = $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  });
 //  document.getElementById("tumpOne").src=""
 </script>
 
