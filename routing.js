@@ -9,7 +9,6 @@ function Routes(){
         var div_end = "</div>";
         console.log("Case studies clicked");
         $.getJSON("/landlordslovecreatives/casestudies.json", function(data){
-            console.log("getJSON running data = \n" + data;
             var n = 0;
             var j = 0;
             $.each(data, function(i, item){
