@@ -11,7 +11,7 @@ function Routes(){
             console.log("getJSON running");
             $.each(data, function(i, item){
                 total = total + "<div class='col-lg-4' id=" + item[i].id + ">";
-                total = total + "<h6>" + item[i][i].title + "</h6>";
+                total = total + "<h6>" + item[i].title + "</h6>";
                 total = total + "<p>" + item[i].description  + "</p>";
                 total = total + "<p>" + item[i].city + "</p>";
                 total = total + "<p>" + item[i].country + "</p>";
