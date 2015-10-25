@@ -10,22 +10,27 @@ function Routes(){
         console.log("Case studies clicked");
         $.getJSON("/landlordslovecreatives/casestudies.json", function(data){
             console.log("getJSON running data = \n" + data);
+            var n = 0;
+            var j = 0;
             $.each(data, function(i, item){
                 console.log("i = " + i + " item = " + item);
-                total = total + "<div class='col-lg-4' id=" + item[i].id + ">";
-                total = total + "<h6>" + item[i].title + "</h6>";
-                total = total + "<p>" + item[i].description  + "</p>";
-                total = total + "<p>" + item[i].city + "</p>";
-                total = total + "<p>" + item[i].country + "</p>";
-                total = total + "<img src='" + item[i].photo + "' />";
-                total = total + "<a href='" + item[i].url + "'>Source</a>";
-                total = total + item[i].video;
-                var benefits = item[i].benefits;
+                total = total + "<div class='col-lg-4' id=" + item[n].id + ">";
+                total = total + "<h6>" + item[n].title + "</h6>";
+                total = total + "<p>" + item[n].description  + "</p>";
+                total = total + "<p>" + item[n].city + "</p>";
+                total = total + "<p>" + item[n].country + "</p>";
+                total = total + "<img src='" + item[n].photo + "' />";
+                total = total + "<a href='" + item[n].url + "'>Source</a>";
+                total = total + item[n].video;
+                var benefits = item[n].benefits;
+                n++;
                 console.log(total);
                 total = total + "<p>Benefits:</p>"
                 $.each(benefits, function(i, val){
-                    total = total + "<p>   " + val[i] + "</p>"
+                    j++
+                    total = total + "<p>   " + val[j] + "</p>"
                 });
+                j = 0;
                 total = total + div_end;
                 console.log("Generate html = " + total + " \n");
             });
