@@ -10,19 +10,19 @@ function Routes(){
         $.getJSON("/landlordslovecreatives/casestudies.json", function(data){
             console.log("getJSON running");
             $.each(data, function(i, item){
-                total = total + "<div class='col-lg-4' id=" + item.id + ">";
-                total = total + "<h6>" + item.title + "</h6>";
-                total = total + "<p>" + item.description  + "</p>";
-                total = total + "<p>" + item.city + "</p>";
-                total = total + "<p>" + item.country + "</p>";
-                total = total + "<img src='" + item.photo_url + "' />";
-                total = total + "<a href='" + item.url + "'>Source</a>";
-                total = total + item.video_url;
-                var benefits = item.benefits;
+                total = total + "<div class='col-lg-4' id=" + item[i][i].id + ">";
+                total = total + "<h6>" + item[i][i].title + "</h6>";
+                total = total + "<p>" + item[i].description  + "</p>";
+                total = total + "<p>" + item[i].city + "</p>";
+                total = total + "<p>" + item[i].country + "</p>";
+                total = total + "<img src='" + item[i].photo_url + "' />";
+                total = total + "<a href='" + item[i].url + "'>Source</a>";
+                total = total + item[i].video_url;
+                var benefits = item[i].benefits;
                 console.log(total);
                 total = total + "<p>Benefits:</p>"
                 $.each(benefits, function(i, val){
-                    total = total + "<p>   " + val + "</p>"
+                    total = total + "<p>   " + val[i] + "</p>"
                 });
                 total = total + div_end;
                 console.log("Generate html = " + total + " \n");
