@@ -19,8 +19,9 @@ function Routes(){
                 total = total + "<a href='" + item.url + "'>Source</a>";
                 total = total + item.video_url;
                 var benefits = item.benefits;
+                console.log(total);
                 total = total + "<p>Benefits:</p>"
-                $.each(benefits, funnction(i, val){
+                $.each(benefits, function(i, val){
                     total = total + "<p>   " + val + "</p>"
                 });
                 total = total + div_end;
