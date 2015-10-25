@@ -20,11 +20,11 @@ function Routes(){
                 total = total + item.video_url;
                 var benefits = item.benefits;
                 total = total + "<p>Benefits:</p>"
-                for(var i = 0; i < benefits.length; i++){
-                    total = total + "<p>   " + benefits[i] + "</p>"
-                }
+                $.each(benefits, funnction(i, val){
+                    total = total + "<p>   " + val + "</p>"
+                });
                 total = total + div_end;
-                console.log("Generate html = \n" + total);
+                console.log("Generate html = " + total + " \n");
             });
         });
         $( "div#jumbo"  ).append(total);
