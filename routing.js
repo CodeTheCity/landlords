@@ -9,11 +9,11 @@ function Routes(){
         var div_end = "</div>";
         console.log("Case studies clicked");
         $.getJSON("/landlordslovecreatives/casestudies.json", function(data){
-            console.log("getJSON running data = \n" + data);
+            console.log("getJSON running data = \n" + data;
             var n = 0;
             var j = 0;
             $.each(data, function(i, item){
-                console.log("i = " + i + " item = " + item);
+                console.log("i = " + i + " item = " + item[n].id);
                 total = total + "<div class='col-lg-4' id=" + item[n].id + ">";
                 total = total + "<h6>" + item[n].title + "</h6>";
                 total = total + "<p>" + item[n].description  + "</p>";
