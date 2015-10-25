@@ -8,8 +8,9 @@ function Routes(){
         var total = ""
         var div_end = "</div>";
         $.getJSON("/landlordslovecreatives/casestudies.json", function(data){
-            console.log("getJSON running");
+            console.log("getJSON running data = \n" + data);
             $.each(data, function(i, item){
+                console.log("i = " + i + " item = " + item);
                 total = total + "<div class='col-lg-4' id=" + item[i].id + ">";
                 total = total + "<h6>" + item[i].title + "</h6>";
                 total = total + "<p>" + item[i].description  + "</p>";
