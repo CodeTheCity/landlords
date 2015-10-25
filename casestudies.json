@@ -16,7 +16,7 @@
 		"country": "England",
 		"photo-url": "http://media.meanwhilespace.com/media/images/Luton_-_Project_jpg_1280x800_crop_q85.jpg",
 		"url": "http://www.meanwhilespace.com/",
-		"video-url": "<iframe src=\"https://player.vimeo.com/video/126248760\" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>", 
+		"video-url": "<iframe src='https://player.vimeo.com/video/126248760' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>", 
 		"benefits": ["testTempTents","testRentInc","testGrants"]
 	},{
 		"id": 3,
