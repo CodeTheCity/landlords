@@ -15,9 +15,9 @@ function Routes(){
                 total = total + "<p>" + item[i].description  + "</p>";
                 total = total + "<p>" + item[i].city + "</p>";
                 total = total + "<p>" + item[i].country + "</p>";
-                total = total + "<img src='" + item[i].photo_url + "' />";
+                total = total + "<img src='" + item[i].photo + "' />";
                 total = total + "<a href='" + item[i].url + "'>Source</a>";
-                total = total + item[i].video_url;
+                total = total + item[i].video;
                 var benefits = item[i].benefits;
                 console.log(total);
                 total = total + "<p>Benefits:</p>"
