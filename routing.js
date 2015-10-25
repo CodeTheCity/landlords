@@ -7,6 +7,7 @@ function Routes(){
         $( "div#jumbo"  ).empty()
         var total = ""
         var div_end = "</div>";
+        console.log("Case studies clicked");
         $.getJSON("/landlordslovecreatives/casestudies.json", function(data){
             console.log("getJSON running data = \n" + data);
             $.each(data, function(i, item){
